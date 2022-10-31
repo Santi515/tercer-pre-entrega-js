@@ -65,3 +65,5 @@ if(precioSubtotal != 0){
     let precioTotal = suma(precioSubtotal, iva(precioSubtotal))
     alert("Este seria el total de su compra: " + precioTotal)
 }
+
+alert
