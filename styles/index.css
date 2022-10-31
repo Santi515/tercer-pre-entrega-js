@@ -1,0 +1,83 @@
+body{
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    overflow-x: hidden;
+}
+
+header{
+    background-color: rgba(255, 255, 255, 0.862);
+    border: solid 5px;
+    border-color: rgb(252, 97, 97);
+    border-radius: 2em;
+}
+
+header h1{
+    font-size: 45px;
+    font-weight: 200;
+}
+
+main section{
+    background-color: rgba(255, 255, 255, 0.89);
+    border: solid 5px;
+    border-color: rgb(252, 97, 97);
+    border-radius: 2em;
+    margin-left: 170px;
+    padding-left: 0px;
+    padding-top: 15px;
+    width: 1220px;
+    height: auto;
+}
+
+section div{
+    display: grid;
+    grid-column: auto;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 109px;
+    width: 1220px;
+    height: auto;
+}
+
+section h1{
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+h1 em{
+    color: grey ;
+}
+
+article h2{
+    padding-top: 10px;
+    font-weight: light;
+}
+
+main img{
+    border: solid 5px;
+    border-radius: 1em;
+    border-color: rgb(68, 68, 68);
+}
+
+#foto{
+    background-image: url(https://www.megacumples.com/media/box_cpequeno-salon-de-fiestas.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+footer img{
+    margin: 7px;
+    height: 60px;
+    width: 60px;
+}
