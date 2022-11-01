@@ -70,6 +70,8 @@ main img{
 }
 
 footer{
+    border: solid 3px;
+    border-color: rgb(175, 39, 39);
     width: 100%;
     padding: 0px;
     margin: 0px;
