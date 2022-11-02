@@ -1,7 +1,7 @@
 function Producto(nombre, precio, stock){
     this.nombre = nombre;
     this.precio = precio;
-    this.stock = stock;
+    this.stock = stock||0;
     this.restarStock = function(cantidad){
         this.stock -= cantidad
     }
@@ -11,8 +11,14 @@ let productoA = new Producto("Hamburguesas", 180, 64)
 let productoB = new Producto("Panchos", 120, 79)
 let productoC = new Producto("Gaseosas", 150, 42)
 
-let productoCompra = prompt("Escriba que producto quisiera comprar: \n1 - Hamburguesas $180 c/u \n2 - Panchos $120 c/u \n3 - Gaseosas $150 c/u \n4 - FIN");
-let precioSubtotal = 0;
+let listaProductos = [productoA, productoB, productoC];
+
+let listaProdStock = listaProductos.filter((prod) => prod.stock > 0);
+
+let listaNombres = listaProdStock.map((prod) => prod.nombre);
+
+// let productoCompra = prompt("Escriba que producto quisiera comprar: \n1 - Hamburguesas $180 c/u \n2 - Panchos $120 c/u \n3 - Gaseosas $150 c/u \n4 - FIN");
+// let precioSubtotal = 0;
 
 while(productoCompra.toLowerCase() != "fin"){
 
@@ -65,5 +71,3 @@ if(precioSubtotal != 0){
     let precioTotal = suma(precioSubtotal, iva(precioSubtotal))
     alert("Este seria el total de su compra: " + precioTotal)
 }
-
-alert

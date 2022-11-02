@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="content" content="En esta pagina podras ordenar cuantas hamburguesas, panchos y aun mas cosas necesites para la fiesta de tus hijos/as.">
+    <meta name="content"
+        content="En esta pagina podras ordenar cuantas hamburguesas, panchos y aun mas cosas necesites para la fiesta de tus hijos/as.">
     <link rel="stylesheet" href="styles/index.css">
     <title>Todoinfantil</title>
 </head>
@@ -13,36 +14,42 @@
 <body id="foto">
     <header>
         <img src="img/todoinfantil.jpg" alt="">
-        <h1 style="text-align: center;">¡Las mejores Hamburguesas y Panchos para los cumpleaños de los chicos!</h1>
+        <h1>¡Las mejores Hamburguesas y Panchos para los cumpleaños de los chicos!</h1>
     </header>
 
     <br>
 
     <main>
-        <section> <!--En esta parte quise poner todo el contenido  del section en el medio de la pagina, pero tuve que usar "margin left: +100px" para poder centrarlo (por asi decirlo)-->
+        <section>
+            <!--En esta parte quise poner todo el contenido  del section en el medio de la pagina, pero tuve que usar "margin left: +100px" para poder centrarlo (por asi decirlo)-->
             <h1>Lista de precios: <em>(Todos los precios incluyen IVA)</em></h1>
-            <div>
+            <div class="productos">
                 <article>
                     <h2>-Hamburguesas: $180 c/u</h2>
                     <img src="/img/hamburguesas.jpg" alt="">
                     <br>
                     <label class="data" for="numeroHamburguesas">¿Cuantas Hamburguesas desea comprar?</label>
-                    <input type="number" name="numeroHamburguesas">
+                    <input type="number" name="numeroHamburguesas" placeholder="(solo numeros)">
                 </article>
                 <article>
                     <h2>-Panchos: $120 c/u</h2>
                     <img src="/img/panchos.jpg" alt="">
                     <br>
                     <label class="data" for="numeroPanchos">¿Cuantos Panchos desea comprar?</label>
-                    <input type="number" name="numeroPanchos">
+                    <input type="number" name="numeroPanchos" placeholder="(solo numeros)">
                 </article>
                 <article>
-                    <h2>-Gaseosas (linea Coca-cola) 2 Litros $150 c/u</h2>
+                    <h2>-Gaseosas (linea Coca-cola) (2 Litros): $150 c/u</h2>
                     <img src="/img/Coca.jpg" alt="" height="400" width="400">
                     <br>
                     <label class="data" for="numeroGaseosas">¿Cuantas Gaseosas desea comprar?</label>
-                    <input type="number" name="numeroGaseosas">
+                    <input type="number" name="numeroGaseosas" placeholder="(solo numeros)">
                 </article>
+            </div>
+            <div class="precio">
+                <h3>Subtotal: </h3>
+                <h3 style="color: grey;">+IVA: </h3>
+                <h4>Total: </h4>
             </div>
         </section>
     </main>
@@ -51,7 +58,9 @@
 
     <footer>
         <h2 style="text-align: center;">¡Siganos en nuestras redes sociales!</h2>
-        <a href="https://todoinfantil.com/fiestas-infantiles/salones-fiestas-infantiles-peloteros"><img src="./img/facebook.png" alt=""></a>
+        <a href="https://todoinfantil.com/fiestas-infantiles/salones-fiestas-infantiles-peloteros"><img
+                src="./img/facebook.png" alt=""></a>
+        <a href="https://www.instagram.com/todoinfantil/"><img src="./img/instagram-logo.jpg" alt=""></a>
     </footer>
 
     <script src="index.js"></script>
