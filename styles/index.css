@@ -44,7 +44,6 @@ main section{
     grid-column: auto;
     padding: 0px;
     margin-top: 10px;
-    margin-bottom: 40px;
     margin-left: 109px;
     width: 1220px;
     height: 1700px;
@@ -55,12 +54,31 @@ main section{
     margin-top: 0px;
     margin-right: 40px;
     padding-left: 15px;
+    background-color: white;
     height: auto;
     width: 300px;
     border: solid 3px;
     border-radius: 4px;
     text-align: left;
     font-size: 25px;
+}
+
+article h3{
+    margin-top: 9px;
+    font-size: larger;
+}
+
+article button{
+    border: none;
+    height: 60px;
+    width: 60px;
+    cursor:pointer;
+}
+
+article button img{
+    height: 42px;
+    margin-top: 10px;
+    border: none;
 }
 
 section h1{
@@ -79,7 +97,7 @@ label{
 }
 
 input{
-    margin: 15px;
+    margin: 10px;
     text-align: center;
     width: 160px;
     font-size: 18px;
