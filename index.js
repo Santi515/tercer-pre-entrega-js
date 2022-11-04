@@ -24,6 +24,15 @@ localStorage.setItem("Gaseosas", 42)
 const suma = (a,b) => a + b;
 const iva = x => x * 0.21;
 
+let stockHamburguesas = document.getElementById("stockHamburguesas")
+stockHamburguesas.innerHTML = "Stock Disponible: " + localStorage.getItem(productoA.nombre);
+
+let stockPanchos = document.getElementById("stockPanchos")
+stockPanchos.innerHTML = "Stock Disponible: " + localStorage.getItem(productoB.nombre);
+
+let stockGaseosas = document.getElementById("stockGaseosas")
+stockGaseosas.innerHTML = "Stock Disponible: " + localStorage.getItem(productoC.nombre)
+
 // let productoCompra = prompt("Escriba que producto quisiera comprar: \n1 - Hamburguesas $180 c/u \n2 - Panchos $120 c/u \n3 - Gaseosas $150 c/u \n4 - FIN");
 // let precioSubtotal = 0;
 
